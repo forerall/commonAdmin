@@ -8,6 +8,9 @@
 |
 */
 
+
+Route::get('/test','TestController@test')->name('test');
+
 Route::group(['namespace'=>'Admin','prefix'=>'admin'],function (){
     //登录、注销
     Route::get('login','LoginController@showLoginForm')->name('admin.loginForm');
@@ -15,8 +18,6 @@ Route::group(['namespace'=>'Admin','prefix'=>'admin'],function (){
     Route::get('logout','LoginController@logout')->name('admin.logout');
 
 });
-
-
 /*
 |--------------------------------------------------------------------------
 | Admin Routes

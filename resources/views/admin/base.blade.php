@@ -75,6 +75,8 @@
 
 
 </script>
+<script src="/common/js/function.js"></script>
+
 @yield('script')
 </body>
 </html>
